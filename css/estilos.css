@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'stranger';
+    src: url(../fuente/strangerThings.ttf);
+}
+
+* {
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    font-family: stranger;
+    color: white;
+}
+
+body {
+    background: black;
+}
+
+
+/*------------------CABECERA------------------------*/
+
+header {
+    background-color: crimson;
+    display: flex;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    margin: 2px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    padding-top: 4%;
+}
+
+nav ul li {
+    float: left;
+    width: 190px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    /*Intensidad de la fuente*/
+    border: 1px solid white;
+}
+
+nav ul li.primerli a {
+    border-left: none;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+
+/*----------ESTILOS TABLA----------*/
+
+table {
+    margin-top: 5px;
+    width: 95%;
+    font-size: 15px;
+    border-collapse: collapse;
+    border: 1px solid red;
+    color: white;
+}
+
+tr {
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid red;
+}
+
+td img,
+#mapa {
+    float: right;
+    margin-right: 20px;
+}
+
+td img,
+.imgBotones {
+    width: 30px;
+}
+
+
+/*----------ESTILOS FORMULARIO----------*/
+
+#iniciarForm {
+    width: 30%;
+    padding: 3em;
+}
+
+#registrarForm {
+    width: 30%;
+    padding: 3em;
+}
+
+#insertarForm {
+    width: 60%;
+    padding: 3em;
+}
+
+button {
+    color: black;
+    background-color: red;
+}
+
+legend {
+    color: red;
+}
+
+input {
+    color: black;
+}
+
+
+/*---------CLASES CORRECTO Y ERRORES---------*/
+
+.errores {
+    color: red;
+    font-size: 10px;
+    font-size: 1em;
+}
+
+.correcto {
+    color: rgb(13, 226, 84);
+    text-align: center;
+}
+
+
+/*------------------------------------MAPA-----------------------------------*/
+
+#myMap {
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.ruta {
+    text-align: center;
+    margin-top: 1%;
+}
